@@ -10,39 +10,39 @@ public class Cmart {
 		
 		Scanner sc = new Scanner (System.in);
 	
-        int item;
-        int price1;
+        int item; // no of item
+        double price1; // price of first item
         int quantity1;
-        int price2;
+        double price2;
         int quantity2;
-        int price3;
+        double price3;
         int quantity3;
         
         
 		System.out.print("Enter the number of items: ");
 		item = sc.nextInt();
 
-		System.out.print("Enter price of first item: RM");
-        price1 = sc.nextInt();
+		System.out.print("Enter price of first item: RM"); // to print this message
+        price1 = sc.nextInt(); // customer enter the price of first item
         
-        System.out.print("Enter quantity of first item: ");
-        quantity1 = sc.nextInt();
+        System.out.print("Enter quantity of first item: ");  // to print this message
+        quantity1 = sc.nextInt(); // customer enter quantity of first item
         
         System.out.println();
         
         System.out.print("Enter price of second item: RM");
-        price2 = sc.nextInt();
+        price2 = sc.nextInt(); // customer enter the price of second item
         
         System.out.print("Enter quantity of first item: ");
-        quantity2 = sc.nextInt();
+        quantity2 = sc.nextInt(); // customer enter quantity of second item
         
         System.out.println();
         
         System.out.print("Enter price of third item: RM");
-        price3 = sc.nextInt();
+        price3 = sc.nextInt();  // customer enter the price of third item
        
         System.out.print("Enter quantity of third item: ");
-        quantity3 = sc.nextInt();
+        quantity3 = sc.nextInt(); // customer enter quantity of third item
         
         System.out.println();
         
