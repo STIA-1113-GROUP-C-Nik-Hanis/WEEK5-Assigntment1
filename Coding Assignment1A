@@ -23,7 +23,7 @@ public class Cmart {
 		item = sc.nextInt();
 
 		System.out.print("Enter price of first item: RM"); // to print this message
-        price1 = sc.nextInt(); // customer enter the price of first item
+        price1 = sc.nextDouble(); // customer enter the price of first item
         
         System.out.print("Enter quantity of first item: ");  // to print this message
         quantity1 = sc.nextInt(); // customer enter quantity of first item
@@ -31,7 +31,7 @@ public class Cmart {
         System.out.println();
         
         System.out.print("Enter price of second item: RM");
-        price2 = sc.nextInt(); // customer enter the price of second item
+        price2 = sc.nextDouble(); // customer enter the price of second item
         
         System.out.print("Enter quantity of first item: ");
         quantity2 = sc.nextInt(); // customer enter quantity of second item
@@ -39,7 +39,7 @@ public class Cmart {
         System.out.println();
         
         System.out.print("Enter price of third item: RM");
-        price3 = sc.nextInt();  // customer enter the price of third item
+        price3 = sc.nextDouble();  // customer enter the price of third item
        
         System.out.print("Enter quantity of third item: ");
         quantity3 = sc.nextInt(); // customer enter quantity of third item
