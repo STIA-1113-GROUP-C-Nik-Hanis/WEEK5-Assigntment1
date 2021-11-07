@@ -1,0 +1,69 @@
+package Assignment1A;
+
+import java.util.Scanner;
+
+public class Cmart {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Scanner sc = new Scanner (System.in);
+	
+        int item;
+        int price1;
+        int quantity1;
+        int price2;
+        int quantity2;
+        int price3;
+        int quantity3;
+        
+        
+		System.out.print("Enter the number of items: ");
+		item = sc.nextInt();
+
+		System.out.print("Enter price of first item: RM");
+        price1 = sc.nextInt();
+        
+        System.out.print("Enter quantity of first item: ");
+        quantity1 = sc.nextInt();
+        
+        System.out.println();
+        
+        System.out.print("Enter price of second item: RM");
+        price2 = sc.nextInt();
+        
+        System.out.print("Enter quantity of first item: ");
+        quantity2 = sc.nextInt();
+        
+        System.out.println();
+        
+        System.out.print("Enter price of third item: RM");
+        price3 = sc.nextInt();
+       
+        System.out.print("Enter quantity of third item: ");
+        quantity3 = sc.nextInt();
+        
+        System.out.println();
+        
+        double totalprice1 = price1 * quantity1;
+        double totalprice2 = price2 * quantity2;
+        double totalprice3 = price3 * quantity3;
+        double totalprice = totalprice1 + totalprice2 + totalprice3;
+        
+        double discount;
+        if (totalprice > 100 ) {
+            discount = 0.2 * totalprice;}
+            else {
+            discount = 0.1 * totalprice;}
+        
+        double paidprice;
+        paidprice = totalprice - discount;
+        
+        System.out.print("Total price         : RM" + totalprice);
+        System.out.println("\nDiscount received   : RM" + discount);
+        System.out.println("Price to be paid    : RM" + paidprice);
+        
+	}
+
+}
