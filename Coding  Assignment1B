@@ -1,0 +1,34 @@
+package Assignment1A;
+
+import java.util.Scanner;
+
+public class UsedCar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner (System.in);
+		
+		double yearlyinterest;
+		int years;
+		double loan;
+		
+		System.out.print("Enter yearly interest rate, for example 3.5: "); 
+		yearlyinterest = sc.nextDouble(); // to enter yearly interest
+		
+		System.out.print("Enter number of years as an integer, for example 5: "); 
+		years = sc.nextInt(); // to enter no of years
+		
+		System.out.print("Enter loan amount, for example 3000.00: "); 
+		loan = sc.nextDouble(); // to enter loan 
+		
+		double interest = yearlyinterest / 100; //to calculate interest (3.5 x 100) 
+		double monthlypay =  interest * loan; // to calculate monthly payment (0.035 x 3000)
+
+		double totalpay = monthlypay * 12 * years; // to calculate total payment (105.00 x 12month x 5years)
+	
+		System.out.printf("The monthly payment is $%.2f" , monthlypay); //display monthly payment 
+		System.out.printf("\nThe total payment is $%.2f" , totalpay); // display total payment
+	}
+
+}
