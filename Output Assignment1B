@@ -1,0 +1,5 @@
+Enter yearly interest rate, for example 3.5: 3.5
+Enter number of years as an integer, for example 5: 5
+Enter loan amount, for example 3000.00: 3000
+The monthly payment is $105.00
+The total payment is $6300.00
