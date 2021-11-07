@@ -44,18 +44,18 @@ public class Cmart {
         System.out.print("Enter quantity of third item: ");
         quantity3 = sc.nextInt(); // customer enter quantity of third item
         
-        System.out.println();
+        System.out.println(); // to give space
         
-        double totalprice1 = price1 * quantity1;
-        double totalprice2 = price2 * quantity2;
-        double totalprice3 = price3 * quantity3;
-        double totalprice = totalprice1 + totalprice2 + totalprice3;
+        double totalprice1 = price1 * quantity1; // to calculate total price for the first item
+        double totalprice2 = price2 * quantity2; // to calculate total price for the second item
+        double totalprice3 = price3 * quantity3; // to calculate total price for the third item
+        double totalprice = totalprice1 + totalprice2 + totalprice3; // to calculate total price for the all item
         
         double discount;
-        if (totalprice > 100 ) {
-            discount = 0.2 * totalprice;}
-            else {
-            discount = 0.1 * totalprice;}
+        if (totalprice > 100 ) { // if total price is more than RM100 
+            discount = 0.2 * totalprice;} // then it will calculate discount 20%
+            else {  // if total price is less than RM100
+            discount = 0.1 * totalprice;} // then it will calculate discount 10%
         
         double paidprice;
         paidprice = totalprice - discount;
